@@ -1,4 +1,53 @@
-# Import the math module for scientific calculations
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="simple-project-page">
+  <main class="simple-project">
+    <a class="back-link" href="index.html#projects">Back to portfolio</a>
+
+    <h1>Scientific Calculator</h1>
+    <p>This is my beginner Python scientific calculator project.</p>
+
+    <section class="simple-box">
+      <h2>Run it here</h2>
+      <label for="simple-operation">Choose operation</label>
+      <select id="simple-operation">
+        <option value="add">Addition</option>
+        <option value="subtract">Subtraction</option>
+        <option value="multiply">Multiplication</option>
+        <option value="divide">Division</option>
+        <option value="power">Power</option>
+        <option value="sqrt">Square Root</option>
+        <option value="sin">Sin</option>
+        <option value="cos">Cos</option>
+        <option value="tan">Tan</option>
+        <option value="log10">Log</option>
+        <option value="ln">Natural Log</option>
+        <option value="percentage">Percentage</option>
+        <option value="factorial">Factorial</option>
+        <option value="round">Round Number</option>
+      </select>
+
+      <label for="simple-first">First number</label>
+      <input id="simple-first" type="number" step="any" />
+
+      <div id="simple-second-wrap">
+        <label for="simple-second">Second number</label>
+        <input id="simple-second" type="number" step="any" />
+      </div>
+
+      <button id="simple-run" type="button">Run</button>
+      <p id="simple-result">Result will show here.</p>
+    </section>
+
+    <section class="simple-box">
+      <h2>My Python code</h2>
+      <pre><code># Import the math module for scientific calculations
 import math
 
 # Run the calculator continuously until the user chooses to exit
@@ -118,4 +167,10 @@ while True:
             print("Result:", round(num1, decimal_places))
         except ValueError:
             print("Invalid input! Please enter a whole number.")
-            continue
+            continue</code></pre>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
